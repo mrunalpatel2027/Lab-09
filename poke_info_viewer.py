@@ -34,7 +34,12 @@ enter_name.grid(row=0, column=1)
 
 def handle_button_get_info():
    poke_name = enter_name.get().strip()
-   
+   if poke_name == '' : return
+   poke_info = get_pokemon_info(poke_name)
+   if poke_info:
+      label_height_value = [text] = str(poke_info['height']) + 'dm'
+      label_weight_value = [text] = str(poke_info['weight']) + 'hg'
+      
 # TODO: Populate the user input frame with widgets
 
 # TODO: Define button click event handler function
