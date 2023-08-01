@@ -19,6 +19,7 @@ root.title("Pokemon Information")
 frame_input = ttk.Frame(root)
 frame_input.grid(row=1, column=0, columnspan=2, pady=(20,1))
 
+
 frame_info = ttk.LabelFrame(root, text="Info")
 frame_info.grid(row=1, column=0, padx=(20,10), pady=(10,20), sticky=N)
 
